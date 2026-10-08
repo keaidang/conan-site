@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>真相只有一个 · keaidang.com | 名侦探柯南分享站</title>
+  <meta name="description" content="keaidang.com —— 名侦探柯南动漫分享站：剧集推荐、剧场版盘点、角色档案、经典台词，一起追寻真相。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕵️</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="logo" href="#top">
+        <span class="logo-bow">🎓</span> KEAIDANG<span class="logo-dot">.</span>COM
+        <small>柯南分享站</small>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#characters">角色档案</a></li>
+        <li><a href="#movies">剧场版</a></li>
+        <li><a href="#episodes">经典剧集</a></li>
+        <li><a href="#quotes">名言台词</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner reveal">
+      <p class="hero-eyebrow">名侦探柯南 · MEITANTEI CONAN · 1996—至今</p>
+      <h1>真相，<span class="accent">只有一个</span>。</h1>
+      <p class="hero-sub">
+        工藤新一被灌下神秘毒药，身体缩小成小学生。化名「江户川柯南」，戴着蝴蝶结变声器，
+        他一边破解无数案件，一边追寻黑衣组织的下落。这里是属于柯迷的分享小站——
+        剧集、剧场版、角色、台词，一起回顾二十多年的推理传奇。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#movies">剧场版盘点</a>
+        <a class="btn btn-ghost" href="#episodes">必看剧集 →</a>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>TV 动画集数</dt><dd>1100+</dd></div>
+        <div><dt>剧场版</dt><dd>28 部</dd></div>
+        <div><dt>连载开始</dt><dd>1994 年</dd></div>
+        <div><dt>作者</dt><dd>青山刚昌</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- 角色档案 -->
+  <section class="section" id="characters">
+    <div class="container">
+      <h2 class="section-title reveal">角色档案 <span>CHARACTERS</span></h2>
+      <p class="section-desc reveal">毛利事务所的日常，从这些面孔开始。</p>
+      <div class="card-grid" id="charGrid"></div>
+    </div>
+  </section>
+
+  <!-- 剧场版 -->
+  <section class="section section-alt" id="movies">
+    <div class="container">
+      <h2 class="section-title reveal">剧场版盘点 <span>THE MOVIES</span></h2>
+      <p class="section-desc reveal">从《引爆摩天楼》到最新的《独眼的残像》，点击标签筛选口碑之作。</p>
+      <div class="filter-bar reveal" id="movieFilter">
+        <button class="chip active" data-filter="all">全部</button>
+        <button class="chip" data-filter="classic">殿堂级</button>
+        <button class="chip" data-filter="action">动作大片</button>
+        <button class="chip" data-filter="romance">感情线</button>
+      </div>
+      <div class="movie-list" id="movieList"></div>
+    </div>
+  </section>
+
+  <!-- 经典剧集 -->
+  <section class="section" id="episodes">
+    <div class="container">
+      <h2 class="section-title reveal">必看经典剧集 <span>EPISODES</span></h2>
+      <p class="section-desc reveal">新入坑的柯迷，从这里开始补番就对了。</p>
+      <div class="ep-list" id="epList"></div>
+    </div>
+  </section>
+
+  <!-- 名言台词 -->
+  <section class="section section-alt" id="quotes">
+    <div class="container">
+      <h2 class="section-title reveal">名言台词 <span>QUOTES</span></h2>
+      <div class="quote-wall" id="quoteWall"></div>
+      <button class="btn btn-ghost reveal" id="quoteBtn">再来一句 🎩</button>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>keaidang.com</strong> · 名侦探柯南动漫分享站</p>
+      <p class="footer-note">
+        本站为非官方粉丝站点，仅供柯迷交流分享。《名侦探柯南》版权归
+        青山刚昌 / 小学馆 / TMS Entertainment 所有。
+      </p>
+      <p class="footer-note">© 2026 keaidang.com · TRUTH IS ALWAYS ONLY ONE</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
